@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #00246B;
+    --secondary-color:   #CADCFC;
+}
+
+body{
+    background-color: var(--primary-color);
+    
+    font-family: 'Roboto',sans-serif;   
+    margin: 0;
+    
+}
+header{
+    display: flex;
+   justify-content: end;
+   padding:20px;
+   background-color: var(--secondary-color);
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-family: 1rem;
+outline: none;
+}
+.search::placeholder{
+    color:var(--primary-color)
+}
+.search:focus{
+    outline: none;
+    background-color: var(--primary-color);
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+ justify-content: center;
+ gap: 20px;
+
+}
+.movie{
+    cursor: pointer;
+    width: 300px;
+    margin :1rem;
+    background-color: var(--secondary-color);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+header{
+    align-items: center;
+}
+.home{
+    margin-right: 20px;
+   
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+}
+.movie img{
+    width: 100%;
+}
+.movie-info span.green{
+    color: rgb(77, 225, 27);
+}
+.movie-info span.orange{
+    color: rgb(234, 202, 19);
+}
+.movie-info span.red{
+    color: rgb(224, 22, 22);
+}
+.overview{
+position: absolute;
+background-color: white;
+padding: 2rem;
+    color: black;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.4s ease ;
+}
+.movie:hover .overview{
+    transform: translateY(0);
+    
+}   
+
+@media only screen and (max-width: 1200px) {
+    .movie-page {
+        flex-wrap: wrap;
+    }
+   
+}
+
+.movie-page{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+width: 90%;
+height: 1000px;
+gap: 40px;
+background-color: var(--secondary-color);
+
+}
+.img-page{
+    width: auto;
+    height: 600px;
+}
+
+.movie-info{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    padding: 0 10px;
+}
+
+
+
+
+.movie-info.page{
+  align-items: start;
+    flex-direction: column;
+
+}
+
+.overview-page{
+    width: 70%;
+   color:var(--primary-color)
+
+}
+
+.contin{
+ display: flex;
+ flex-direction: column;
+}
+#rating-page{
+    width: 50px;
+}
+main.main-muv{
+    background-color: #CADCFC;
+}
